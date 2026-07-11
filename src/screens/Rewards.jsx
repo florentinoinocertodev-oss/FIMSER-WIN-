@@ -1,13 +1,12 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React from "react";
 function Rewards() {
-  return /* @__PURE__ */ jsxDEV("div", { style: { padding: 16 }, children: /* @__PURE__ */ jsxDEV("div", { className: "glass", style: { padding: 16 }, children: [
-    /* @__PURE__ */ jsxDEV("h3", { children: "Rewards" }, void 0, false, {
+  return /* @__PURE__ */ React.createElement("div", { style: { padding: 16 }, children: /* @__PURE__ */ React.createElement("div", { className: "glass", style: { padding: 16 }, children: [
+    /* @__PURE__ */ React.createElement("h3", { children: "Rewards" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 7,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV("div", { className: "small", children: "Claim rewards and daily bonuses" }, void 0, false, {
+    /* @__PURE__ */ React.createElement("div", { className: "small", children: "Claim rewards and daily bonuses" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 8,
       columnNumber: 9

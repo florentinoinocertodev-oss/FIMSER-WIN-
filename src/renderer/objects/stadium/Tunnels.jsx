@@ -1,14 +1,13 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React from "react";
 function Tunnels() {
-  return /* @__PURE__ */ jsxDEV("group", { name: "Tunnels", children: [
-    /* @__PURE__ */ jsxDEV("mesh", { position: [45, 0, -10], "rotation-y": Math.PI / 2, children: [
-      /* @__PURE__ */ jsxDEV("boxGeometry", { args: [8, 6, 12] }, void 0, false, {
+  return /* @__PURE__ */ React.createElement("group", { name: "Tunnels", children: [
+    /* @__PURE__ */ React.createElement("mesh", { position: [45, 0, -10], "rotation-y": Math.PI / 2, children: [
+      /* @__PURE__ */ React.createElement("boxGeometry", { args: [8, 6, 12] }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 13,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: "#070809" }, void 0, false, {
+      /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: "#070809" }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 14,
         columnNumber: 9
@@ -18,13 +17,13 @@ function Tunnels() {
       lineNumber: 12,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV("mesh", { position: [-45, 0, -10], "rotation-y": -Math.PI / 2, children: [
-      /* @__PURE__ */ jsxDEV("boxGeometry", { args: [6, 5, 8] }, void 0, false, {
+    /* @__PURE__ */ React.createElement("mesh", { position: [-45, 0, -10], "rotation-y": -Math.PI / 2, children: [
+      /* @__PURE__ */ React.createElement("boxGeometry", { args: [6, 5, 8] }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 19,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: "#070809" }, void 0, false, {
+      /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: "#070809" }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 20,
         columnNumber: 9

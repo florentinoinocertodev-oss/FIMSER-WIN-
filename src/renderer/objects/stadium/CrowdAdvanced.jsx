@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
@@ -65,14 +64,14 @@ function CrowdAdvanced({ density = 0.8, visual = {} }) {
     if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
   });
   const flags = cfg.flags || [];
-  return /* @__PURE__ */ jsxDEV("group", { name: "Crowd_Advanced", children: [
-    /* @__PURE__ */ jsxDEV("instancedMesh", { ref: instRef, args: [null, null, total], castShadow: true, receiveShadow: true, children: [
-      /* @__PURE__ */ jsxDEV("boxGeometry", { args: [2.2, 0.9, 0.8] }, void 0, false, {
+  return /* @__PURE__ */ React.createElement("group", { name: "Crowd_Advanced", children: [
+    /* @__PURE__ */ React.createElement("instancedMesh", { ref: instRef, args: [null, null, total], castShadow: true, receiveShadow: true, children: [
+      /* @__PURE__ */ React.createElement("boxGeometry", { args: [2.2, 0.9, 0.8] }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 89,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV("meshStandardMaterial", { vertexColors: true, color: "#333", roughness: 0.7, metalness: 0.02 }, void 0, false, {
+      /* @__PURE__ */ React.createElement("meshStandardMaterial", { vertexColors: true, color: "#333", roughness: 0.7, metalness: 0.02 }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 90,
         columnNumber: 9
@@ -82,13 +81,13 @@ function CrowdAdvanced({ density = 0.8, visual = {} }) {
       lineNumber: 88,
       columnNumber: 7
     }, this),
-    flags.map((f, idx) => /* @__PURE__ */ jsxDEV("group", { position: f.pos || [0, 12, 0], scale: f.scale || 1, children: /* @__PURE__ */ jsxDEV("mesh", { position: [0, 0.2, 0], children: [
-      /* @__PURE__ */ jsxDEV("planeGeometry", { args: [2.8, 1.4] }, void 0, false, {
+    flags.map((f, idx) => /* @__PURE__ */ React.createElement("group", { position: f.pos || [0, 12, 0], scale: f.scale || 1, children: /* @__PURE__ */ React.createElement("mesh", { position: [0, 0.2, 0], children: [
+      /* @__PURE__ */ React.createElement("planeGeometry", { args: [2.8, 1.4] }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 97,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: f.color || "#ffffff", side: 2 }, void 0, false, {
+      /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: f.color || "#ffffff", side: 2 }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 98,
         columnNumber: 13
@@ -102,7 +101,7 @@ function CrowdAdvanced({ density = 0.8, visual = {} }) {
       lineNumber: 95,
       columnNumber: 9
     }, this)),
-    visual?.ui?.cameraFlashes && /* @__PURE__ */ jsxDEV("group", { name: "CameraFlash_Placeholder", position: [0, 18, -40] }, void 0, false, {
+    visual?.ui?.cameraFlashes && /* @__PURE__ */ React.createElement("group", { name: "CameraFlash_Placeholder", position: [0, 18, -40] }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 104,
       columnNumber: 37

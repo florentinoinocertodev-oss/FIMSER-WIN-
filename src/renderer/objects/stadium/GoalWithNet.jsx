@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 function GoalWithNet({ position = [0, 0, 0], side = "left", visual = {} }) {
@@ -11,14 +10,14 @@ function GoalWithNet({ position = [0, 0, 0], side = "left", visual = {} }) {
       netRef.current.rotation.y = Math.sin(t * 0.9) * 0.02 * swayIntensity;
     }
   });
-  return /* @__PURE__ */ jsxDEV("group", { position, name: `Goal_${side}`, children: [
-    /* @__PURE__ */ jsxDEV("mesh", { position: [0, 1.1, 1], children: [
-      /* @__PURE__ */ jsxDEV("boxGeometry", { args: [7.32, 2.2, 0.2] }, void 0, false, {
+  return /* @__PURE__ */ React.createElement("group", { position, name: `Goal_${side}`, children: [
+    /* @__PURE__ */ React.createElement("mesh", { position: [0, 1.1, 1], children: [
+      /* @__PURE__ */ React.createElement("boxGeometry", { args: [7.32, 2.2, 0.2] }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 31,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: "#ffffff", metalness: 0.2, roughness: 0.6 }, void 0, false, {
+      /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: "#ffffff", metalness: 0.2, roughness: 0.6 }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 32,
         columnNumber: 9
@@ -28,13 +27,13 @@ function GoalWithNet({ position = [0, 0, 0], side = "left", visual = {} }) {
       lineNumber: 30,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV("mesh", { position: [3.6, 0.6, 1], children: [
-      /* @__PURE__ */ jsxDEV("boxGeometry", { args: [0.2, 1.2, 0.2] }, void 0, false, {
+    /* @__PURE__ */ React.createElement("mesh", { position: [3.6, 0.6, 1], children: [
+      /* @__PURE__ */ React.createElement("boxGeometry", { args: [0.2, 1.2, 0.2] }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 37,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: "#ffffff" }, void 0, false, {
+      /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: "#ffffff" }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 38,
         columnNumber: 9
@@ -44,13 +43,13 @@ function GoalWithNet({ position = [0, 0, 0], side = "left", visual = {} }) {
       lineNumber: 36,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV("mesh", { ref: netRef, position: [0, 1.1, -0.8], children: [
-      /* @__PURE__ */ jsxDEV("boxGeometry", { args: [7.2, 2, 3.6] }, void 0, false, {
+    /* @__PURE__ */ React.createElement("mesh", { ref: netRef, position: [0, 1.1, -0.8], children: [
+      /* @__PURE__ */ React.createElement("boxGeometry", { args: [7.2, 2, 3.6] }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 43,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: "#ffffff", opacity: 0.14, transparent: true }, void 0, false, {
+      /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: "#ffffff", opacity: 0.14, transparent: true }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 44,
         columnNumber: 9

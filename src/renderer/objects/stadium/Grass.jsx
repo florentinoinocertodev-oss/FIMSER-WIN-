@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { useMemo } from "react";
 import * as THREE from "three";
 function Grass({ mode = "day", weather = "clear", wear = 0 }) {
@@ -86,13 +85,13 @@ function Grass({ mode = "day", weather = "clear", wear = 0 }) {
       side: THREE.DoubleSide
     });
   }, [uniforms]);
-  return /* @__PURE__ */ jsxDEV("mesh", { receiveShadow: true, "rotation-x": -Math.PI / 2, position: [0, 0, 0], name: "Field_Grass", children: [
-    /* @__PURE__ */ jsxDEV("planeGeometry", { args: [120, 80, 256, 256] }, void 0, false, {
+  return /* @__PURE__ */ React.createElement("mesh", { receiveShadow: true, "rotation-x": -Math.PI / 2, position: [0, 0, 0], name: "Field_Grass", children: [
+    /* @__PURE__ */ React.createElement("planeGeometry", { args: [120, 80, 256, 256] }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 107,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV("primitive", { object: mat, attach: "material" }, void 0, false, {
+    /* @__PURE__ */ React.createElement("primitive", { object: mat, attach: "material" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 108,
       columnNumber: 7

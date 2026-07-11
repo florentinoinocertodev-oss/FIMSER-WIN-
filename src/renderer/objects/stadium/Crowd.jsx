@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 function Crowd({ density = 0.6, visual = {} }) {
@@ -20,10 +19,10 @@ function Crowd({ density = 0.6, visual = {} }) {
     if (!groupRef.current) return;
     groupRef.current.rotation.y = Math.sin(t * 0.15) * 0.01 * intensity;
   });
-  return /* @__PURE__ */ jsxDEV("group", { name: "Crowd_Placeholders", ref: groupRef, children: items.map((it) => {
+  return /* @__PURE__ */ React.createElement("group", { name: "Crowd_Placeholders", ref: groupRef, children: items.map((it) => {
     const seed = (it.s * 97 + it.i * 13) % 100;
     const phase = seed / 100;
-    return /* @__PURE__ */ jsxDEV(
+    return /* @__PURE__ */ React.createElement(
       "mesh",
       {
         position: [it.x, it.y, it.z],
@@ -35,12 +34,12 @@ function Crowd({ density = 0.6, visual = {} }) {
           self.scale.y = 1 + bob;
         },
         children: [
-          /* @__PURE__ */ jsxDEV("boxGeometry", { args: [3.2, 1.2, 1] }, void 0, false, {
+          /* @__PURE__ */ React.createElement("boxGeometry", { args: [3.2, 1.2, 1] }, void 0, false, {
             fileName: "<stdin>",
             lineNumber: 57,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: "#222" }, void 0, false, {
+          /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: "#222" }, void 0, false, {
             fileName: "<stdin>",
             lineNumber: 58,
             columnNumber: 13

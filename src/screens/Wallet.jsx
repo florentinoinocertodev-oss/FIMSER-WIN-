@@ -1,17 +1,16 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React from "react";
 import { useVisualState } from "../network/visualState.jsx";
 function Wallet() {
   const { state } = useVisualState();
   const ui = state.visual?.ui || {};
   const wallet = ui.wallet || { balance: 0, multiplier: 1, cashoutAvailable: false };
-  return /* @__PURE__ */ jsxDEV("div", { style: { padding: 16 }, children: /* @__PURE__ */ jsxDEV("div", { className: "glass", style: { padding: 16 }, children: [
-    /* @__PURE__ */ jsxDEV("h3", { children: "Wallet" }, void 0, false, {
+  return /* @__PURE__ */ React.createElement("div", { style: { padding: 16 }, children: /* @__PURE__ */ React.createElement("div", { className: "glass", style: { padding: 16 }, children: [
+    /* @__PURE__ */ React.createElement("h3", { children: "Wallet" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 11,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV("div", { className: "small", children: [
+    /* @__PURE__ */ React.createElement("div", { className: "small", children: [
       "Balance: $",
       wallet.balance
     ] }, void 0, true, {
@@ -19,7 +18,7 @@ function Wallet() {
       lineNumber: 12,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV("div", { className: "small", children: [
+    /* @__PURE__ */ React.createElement("div", { className: "small", children: [
       "Multiplier: x",
       wallet.multiplier
     ] }, void 0, true, {
@@ -27,13 +26,13 @@ function Wallet() {
       lineNumber: 13,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV("div", { style: { marginTop: 12, display: "flex", gap: 8 }, children: [
-      /* @__PURE__ */ jsxDEV("a", { className: "btn", href: "/wallet/deposit", children: "Deposit" }, void 0, false, {
+    /* @__PURE__ */ React.createElement("div", { style: { marginTop: 12, display: "flex", gap: 8 }, children: [
+      /* @__PURE__ */ React.createElement("a", { className: "btn", href: "/wallet/deposit", children: "Deposit" }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 15,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ jsxDEV("a", { className: "btn", href: "/wallet/withdraw", children: "Withdraw" }, void 0, false, {
+      /* @__PURE__ */ React.createElement("a", { className: "btn", href: "/wallet/withdraw", children: "Withdraw" }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 16,
         columnNumber: 11

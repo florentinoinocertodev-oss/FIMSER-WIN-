@@ -1,10 +1,9 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
 import RendererScene from "./RendererScene.jsx";
 function RendererRoot({ visual }) {
-  return /* @__PURE__ */ jsxDEV("div", { style: { width: "100%", height: "100%" }, children: /* @__PURE__ */ jsxDEV(
+  return /* @__PURE__ */ React.createElement("div", { style: { width: "100%", height: "100%" }, children: /* @__PURE__ */ React.createElement(
     Canvas,
     {
       camera: { position: [0, 18, 30], fov: 50 },
@@ -19,12 +18,12 @@ function RendererRoot({ visual }) {
       performance: { min: 0.5, debounce: 50 },
       style: { width: "100%", height: "100%" },
       children: [
-        /* @__PURE__ */ jsxDEV("ambientLight", { intensity: 0.45 }, void 0, false, {
+        /* @__PURE__ */ React.createElement("ambientLight", { intensity: 0.45 }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 32,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV(
+        /* @__PURE__ */ React.createElement(
           "directionalLight",
           {
             castShadow: true,
@@ -43,12 +42,12 @@ function RendererRoot({ visual }) {
           },
           this
         ),
-        /* @__PURE__ */ jsxDEV("hemisphereLight", { intensity: 0.22, groundColor: "#10121a" }, void 0, false, {
+        /* @__PURE__ */ React.createElement("hemisphereLight", { intensity: 0.22, groundColor: "#10121a" }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 43,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ jsxDEV(RendererScene, { visual }, void 0, false, {
+        /* @__PURE__ */ React.createElement(RendererScene, { visual }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 45,
           columnNumber: 9

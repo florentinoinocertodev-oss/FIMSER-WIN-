@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { createContext, useContext, useEffect, useRef, useState } from "react";
 import { createNetworkService } from "../network/networkService.js";
 const VisualStateContext = createContext(null);
@@ -75,7 +74,7 @@ function VisualStateProvider({ children }) {
   function send(obj) {
     return serviceRef.current ? serviceRef.current.send(obj) : false;
   }
-  return /* @__PURE__ */ jsxDEV(VisualStateContext.Provider, { value: { state, send }, children }, void 0, false, {
+  return /* @__PURE__ */ React.createElement(VisualStateContext.Provider, { value: { state, send }, children }, void 0, false, {
     fileName: "<stdin>",
     lineNumber: 102,
     columnNumber: 5

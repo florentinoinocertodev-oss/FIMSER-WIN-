@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
@@ -29,19 +28,19 @@ function Effects({ visual = {} }) {
   }, []);
   useFrame(({ clock }) => {
   });
-  return /* @__PURE__ */ jsxDEV("group", { children: [
-    fogCfg && /* @__PURE__ */ jsxDEV("fog", { attach: "fog", args: [fogCfg.color || "#0b0f14", fogCfg.near ?? 6, fogCfg.far ?? 140] }, void 0, false, {
+  return /* @__PURE__ */ React.createElement("group", { children: [
+    fogCfg && /* @__PURE__ */ React.createElement("fog", { attach: "fog", args: [fogCfg.color || "#0b0f14", fogCfg.near ?? 6, fogCfg.far ?? 140] }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 52,
       columnNumber: 18
     }, this),
-    ui.timeOfDay === "sunset" && /* @__PURE__ */ jsxDEV("hemisphereLight", { intensity: 0.25, groundColor: "#7b3e1f" }, void 0, false, {
+    ui.timeOfDay === "sunset" && /* @__PURE__ */ React.createElement("hemisphereLight", { intensity: 0.25, groundColor: "#7b3e1f" }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 55,
       columnNumber: 37
     }, this),
-    ui.volumetrics && ui.volumetrics.enabled && (ui.volumetrics.lights || []).map((l, i) => /* @__PURE__ */ jsxDEV("group", { position: [l.position?.x || 0, l.position?.y || 20, l.position?.z || 0], children: [
-      /* @__PURE__ */ jsxDEV(
+    ui.volumetrics && ui.volumetrics.enabled && (ui.volumetrics.lights || []).map((l, i) => /* @__PURE__ */ React.createElement("group", { position: [l.position?.x || 0, l.position?.y || 20, l.position?.z || 0], children: [
+      /* @__PURE__ */ React.createElement(
         "spotLight",
         {
           castShadow: true,
@@ -60,13 +59,13 @@ function Effects({ visual = {} }) {
         },
         this
       ),
-      /* @__PURE__ */ jsxDEV("mesh", { "rotation-x": -Math.PI / 2, position: [0, -((l.distance ?? 80) / 2) + (l.offsetY ?? 0), 0], scale: [1, (l.distance ?? 80) / 20, 1], children: [
-        /* @__PURE__ */ jsxDEV("coneGeometry", { args: [l.radius ?? 12, l.distance ?? 80, 12] }, void 0, false, {
+      /* @__PURE__ */ React.createElement("mesh", { "rotation-x": -Math.PI / 2, position: [0, -((l.distance ?? 80) / 2) + (l.offsetY ?? 0), 0], scale: [1, (l.distance ?? 80) / 20, 1], children: [
+        /* @__PURE__ */ React.createElement("coneGeometry", { args: [l.radius ?? 12, l.distance ?? 80, 12] }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 72,
           columnNumber: 15
         }, this),
-        /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: l.color || "#fff", transparent: true, opacity: 0.06, depthWrite: false }, void 0, false, {
+        /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: l.color || "#fff", transparent: true, opacity: 0.06, depthWrite: false }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 73,
           columnNumber: 15
@@ -81,7 +80,7 @@ function Effects({ visual = {} }) {
       lineNumber: 61,
       columnNumber: 11
     }, this)),
-    weather === "rain" && /* @__PURE__ */ jsxDEV(
+    weather === "rain" && /* @__PURE__ */ React.createElement(
       "points",
       {
         geometry: rainGeo,
@@ -95,7 +94,7 @@ function Effects({ visual = {} }) {
           }
           posAttr.needsUpdate = true;
         },
-        children: /* @__PURE__ */ jsxDEV("pointsMaterial", { size: 0.6, color: "#cfe8ff", transparent: true, opacity: 0.06, depthWrite: false }, void 0, false, {
+        children: /* @__PURE__ */ React.createElement("pointsMaterial", { size: 0.6, color: "#cfe8ff", transparent: true, opacity: 0.06, depthWrite: false }, void 0, false, {
           fileName: "<stdin>",
           lineNumber: 94,
           columnNumber: 11

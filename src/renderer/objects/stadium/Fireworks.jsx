@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 function Fireworks({ visual = {} }) {
@@ -33,17 +32,17 @@ function Fireworks({ visual = {} }) {
     });
     particlesRef.current = particlesRef.current.filter((g) => now - g.start < 2200);
   });
-  return /* @__PURE__ */ jsxDEV("group", { name: "Fireworks_Group", children: particlesRef.current.map((g, gi) => /* @__PURE__ */ jsxDEV("group", { position: g.pos, children: g.particles.map((p, pi) => {
+  return /* @__PURE__ */ React.createElement("group", { name: "Fireworks_Group", children: particlesRef.current.map((g, gi) => /* @__PURE__ */ React.createElement("group", { position: g.pos, children: g.particles.map((p, pi) => {
     const age = (Date.now() - g.start) / 1e3;
     const lifeFrac = Math.max(0, 1 - age * 0.8);
     const pos = [p.dir[0] * age * 3, p.dir[1] * age * 3, p.dir[2] * age * 3];
-    return /* @__PURE__ */ jsxDEV("mesh", { position: pos, children: [
-      /* @__PURE__ */ jsxDEV("sphereGeometry", { args: [p.size * lifeFrac, 6, 6] }, void 0, false, {
+    return /* @__PURE__ */ React.createElement("mesh", { position: pos, children: [
+      /* @__PURE__ */ React.createElement("sphereGeometry", { args: [p.size * lifeFrac, 6, 6] }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 61,
         columnNumber: 17
       }, this),
-      /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: g.color, emissive: g.color, emissiveIntensity: 0.8 * lifeFrac, transparent: true, opacity: 0.9 * lifeFrac }, void 0, false, {
+      /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: g.color, emissive: g.color, emissiveIntensity: 0.8 * lifeFrac, transparent: true, opacity: 0.9 * lifeFrac }, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 62,
         columnNumber: 17

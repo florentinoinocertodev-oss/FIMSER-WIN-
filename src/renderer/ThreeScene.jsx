@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { Suspense } from "react";
 import { useFrame } from "@react-three/fiber";
 import StadiumRenderer from "./systems/StadiumRenderer.jsx";
@@ -20,63 +19,63 @@ function ThreeScene({ visual }) {
   const match = visual?.match || {};
   useFrame(() => {
   });
-  return /* @__PURE__ */ jsxDEV(Suspense, { fallback: null, children: [
-    /* @__PURE__ */ jsxDEV(LightingSystem, { visual }, void 0, false, {
+  return /* @__PURE__ */ React.createElement(Suspense, { fallback: null, children: [
+    /* @__PURE__ */ React.createElement(LightingSystem, { visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 34,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(StadiumRenderer, { visual, match }, void 0, false, {
+    /* @__PURE__ */ React.createElement(StadiumRenderer, { visual, match }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 37,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(CrowdRenderer, { visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(CrowdRenderer, { visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 40,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(PlayerRenderer, { players, visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(PlayerRenderer, { players, visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 43,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(GoalkeeperRenderer, { players, visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(GoalkeeperRenderer, { players, visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 44,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(BallRenderer, { ball, visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(BallRenderer, { ball, visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 47,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(CameraSystem, { camera, visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(CameraSystem, { camera, visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 50,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(EffectsRenderer, { visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(EffectsRenderer, { visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 53,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(ReplayRenderer, { visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(ReplayRenderer, { visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 56,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(BroadcastOverlay, { visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(BroadcastOverlay, { visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 57,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(AnimationRenderer, { visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(AnimationRenderer, { visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 60,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ jsxDEV(AudioPlaceholderSystem, { visual }, void 0, false, {
+    /* @__PURE__ */ React.createElement(AudioPlaceholderSystem, { visual }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 61,
       columnNumber: 7

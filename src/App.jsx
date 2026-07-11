@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./layouts/MainLayout.jsx";
@@ -38,12 +37,12 @@ const Marketplace = lazy(() => import("./screens/Marketplace.jsx"));
 const Support = lazy(() => import("./screens/Support.jsx"));
 const ForgotPassword = lazy(() => import("./screens/ForgotPassword.jsx"));
 function App() {
-  return /* @__PURE__ */ jsxDEV(VisualStateProvider, { children: /* @__PURE__ */ jsxDEV(BrowserRouter, { children: /* @__PURE__ */ jsxDEV(Suspense, { fallback: /* @__PURE__ */ jsxDEV("div", { style: { height: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }, children: "Loading\u2026" }, void 0, false, {
+  return /* @__PURE__ */ React.createElement(VisualStateProvider, { children: /* @__PURE__ */ React.createElement(BrowserRouter, { children: /* @__PURE__ */ React.createElement(Suspense, { fallback: /* @__PURE__ */ React.createElement("div", { style: { height: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }, children: "Loading\u2026" }, void 0, false, {
     fileName: "<stdin>",
     lineNumber: 50,
     columnNumber: 29
-  }, this), children: /* @__PURE__ */ jsxDEV(Routes, { children: [
-    /* @__PURE__ */ jsxDEV(Route, { path: "/", element: /* @__PURE__ */ jsxDEV(Splash, {}, void 0, false, {
+  }, this), children: /* @__PURE__ */ React.createElement(Routes, { children: [
+    /* @__PURE__ */ React.createElement(Route, { path: "/", element: /* @__PURE__ */ React.createElement(Splash, {}, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 52,
       columnNumber: 38
@@ -52,7 +51,7 @@ function App() {
       lineNumber: 52,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ jsxDEV(Route, { path: "/auth/login", element: /* @__PURE__ */ jsxDEV(Login, {}, void 0, false, {
+    /* @__PURE__ */ React.createElement(Route, { path: "/auth/login", element: /* @__PURE__ */ React.createElement(Login, {}, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 53,
       columnNumber: 48
@@ -61,7 +60,7 @@ function App() {
       lineNumber: 53,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ jsxDEV(Route, { path: "/auth/register", element: /* @__PURE__ */ jsxDEV(Register, {}, void 0, false, {
+    /* @__PURE__ */ React.createElement(Route, { path: "/auth/register", element: /* @__PURE__ */ React.createElement(Register, {}, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 54,
       columnNumber: 51
@@ -70,7 +69,7 @@ function App() {
       lineNumber: 54,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ jsxDEV(Route, { path: "/auth/forgot", element: /* @__PURE__ */ jsxDEV(ForgotPassword, {}, void 0, false, {
+    /* @__PURE__ */ React.createElement(Route, { path: "/auth/forgot", element: /* @__PURE__ */ React.createElement(ForgotPassword, {}, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 55,
       columnNumber: 49
@@ -79,12 +78,12 @@ function App() {
       lineNumber: 55,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ jsxDEV(Route, { element: /* @__PURE__ */ jsxDEV(Layout, {}, void 0, false, {
+    /* @__PURE__ */ React.createElement(Route, { element: /* @__PURE__ */ React.createElement(Layout, {}, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 56,
       columnNumber: 29
     }, this), children: [
-      /* @__PURE__ */ jsxDEV(Route, { path: "/dashboard", element: /* @__PURE__ */ jsxDEV(Dashboard, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/dashboard", element: /* @__PURE__ */ React.createElement(Dashboard, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 57,
         columnNumber: 49
@@ -93,7 +92,7 @@ function App() {
         lineNumber: 57,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/wallet", element: /* @__PURE__ */ jsxDEV(Wallet, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/wallet", element: /* @__PURE__ */ React.createElement(Wallet, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 58,
         columnNumber: 46
@@ -102,7 +101,7 @@ function App() {
         lineNumber: 58,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/wallet/deposit", element: /* @__PURE__ */ jsxDEV(Deposit, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/wallet/deposit", element: /* @__PURE__ */ React.createElement(Deposit, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 59,
         columnNumber: 54
@@ -111,7 +110,7 @@ function App() {
         lineNumber: 59,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/wallet/withdraw", element: /* @__PURE__ */ jsxDEV(Withdraw, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/wallet/withdraw", element: /* @__PURE__ */ React.createElement(Withdraw, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 60,
         columnNumber: 55
@@ -120,7 +119,7 @@ function App() {
         lineNumber: 60,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/statistics", element: /* @__PURE__ */ jsxDEV(Statistics, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/statistics", element: /* @__PURE__ */ React.createElement(Statistics, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 61,
         columnNumber: 50
@@ -129,7 +128,7 @@ function App() {
         lineNumber: 61,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/notifications", element: /* @__PURE__ */ jsxDEV(Notifications, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/notifications", element: /* @__PURE__ */ React.createElement(Notifications, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 62,
         columnNumber: 53
@@ -138,7 +137,7 @@ function App() {
         lineNumber: 62,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/friends", element: /* @__PURE__ */ jsxDEV(Friends, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/friends", element: /* @__PURE__ */ React.createElement(Friends, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 63,
         columnNumber: 47
@@ -147,7 +146,7 @@ function App() {
         lineNumber: 63,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/leaderboard", element: /* @__PURE__ */ jsxDEV(Leaderboard, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/leaderboard", element: /* @__PURE__ */ React.createElement(Leaderboard, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 64,
         columnNumber: 51
@@ -156,7 +155,7 @@ function App() {
         lineNumber: 64,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/club", element: /* @__PURE__ */ jsxDEV(ClubSelection, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/club", element: /* @__PURE__ */ React.createElement(ClubSelection, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 65,
         columnNumber: 44
@@ -165,7 +164,7 @@ function App() {
         lineNumber: 65,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/competition", element: /* @__PURE__ */ jsxDEV(CompetitionSelection, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/competition", element: /* @__PURE__ */ React.createElement(CompetitionSelection, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 66,
         columnNumber: 51
@@ -174,7 +173,7 @@ function App() {
         lineNumber: 66,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/tournament", element: /* @__PURE__ */ jsxDEV(Tournament, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/tournament", element: /* @__PURE__ */ React.createElement(Tournament, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 67,
         columnNumber: 50
@@ -183,7 +182,7 @@ function App() {
         lineNumber: 67,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/season", element: /* @__PURE__ */ jsxDEV(Season, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/season", element: /* @__PURE__ */ React.createElement(Season, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 68,
         columnNumber: 46
@@ -192,7 +191,7 @@ function App() {
         lineNumber: 68,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/store", element: /* @__PURE__ */ jsxDEV(Store, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/store", element: /* @__PURE__ */ React.createElement(Store, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 69,
         columnNumber: 45
@@ -201,7 +200,7 @@ function App() {
         lineNumber: 69,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/inventory", element: /* @__PURE__ */ jsxDEV(Inventory, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/inventory", element: /* @__PURE__ */ React.createElement(Inventory, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 70,
         columnNumber: 49
@@ -210,7 +209,7 @@ function App() {
         lineNumber: 70,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/customization", element: /* @__PURE__ */ jsxDEV(Customization, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/customization", element: /* @__PURE__ */ React.createElement(Customization, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 71,
         columnNumber: 53
@@ -219,7 +218,7 @@ function App() {
         lineNumber: 71,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/settings", element: /* @__PURE__ */ jsxDEV(Settings, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/settings", element: /* @__PURE__ */ React.createElement(Settings, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 72,
         columnNumber: 48
@@ -228,7 +227,7 @@ function App() {
         lineNumber: 72,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/premium", element: /* @__PURE__ */ jsxDEV(Premium, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/premium", element: /* @__PURE__ */ React.createElement(Premium, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 73,
         columnNumber: 47
@@ -237,7 +236,7 @@ function App() {
         lineNumber: 73,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/vip", element: /* @__PURE__ */ jsxDEV(VIP, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/vip", element: /* @__PURE__ */ React.createElement(VIP, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 74,
         columnNumber: 43
@@ -246,7 +245,7 @@ function App() {
         lineNumber: 74,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/match/lobby", element: /* @__PURE__ */ jsxDEV(MatchLobby, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/match/lobby", element: /* @__PURE__ */ React.createElement(MatchLobby, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 75,
         columnNumber: 51
@@ -255,7 +254,7 @@ function App() {
         lineNumber: 75,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/match/loading", element: /* @__PURE__ */ jsxDEV(LoadingScreen, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/match/loading", element: /* @__PURE__ */ React.createElement(LoadingScreen, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 76,
         columnNumber: 53
@@ -264,7 +263,7 @@ function App() {
         lineNumber: 76,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/match/:id", element: /* @__PURE__ */ jsxDEV(Match, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/match/:id", element: /* @__PURE__ */ React.createElement(Match, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 77,
         columnNumber: 49
@@ -273,7 +272,7 @@ function App() {
         lineNumber: 77,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/pause", element: /* @__PURE__ */ jsxDEV(PauseMenu, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/pause", element: /* @__PURE__ */ React.createElement(PauseMenu, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 78,
         columnNumber: 45
@@ -282,7 +281,7 @@ function App() {
         lineNumber: 78,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/replay", element: /* @__PURE__ */ jsxDEV(ReplayScreen, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/replay", element: /* @__PURE__ */ React.createElement(ReplayScreen, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 79,
         columnNumber: 46
@@ -291,7 +290,7 @@ function App() {
         lineNumber: 79,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/results", element: /* @__PURE__ */ jsxDEV(Results, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/results", element: /* @__PURE__ */ React.createElement(Results, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 80,
         columnNumber: 47
@@ -300,7 +299,7 @@ function App() {
         lineNumber: 80,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/rewards", element: /* @__PURE__ */ jsxDEV(Rewards, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/rewards", element: /* @__PURE__ */ React.createElement(Rewards, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 81,
         columnNumber: 47
@@ -309,7 +308,7 @@ function App() {
         lineNumber: 81,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/achievements", element: /* @__PURE__ */ jsxDEV(Achievements, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/achievements", element: /* @__PURE__ */ React.createElement(Achievements, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 82,
         columnNumber: 52
@@ -318,7 +317,7 @@ function App() {
         lineNumber: 82,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/battlepass", element: /* @__PURE__ */ jsxDEV(BattlePass, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/battlepass", element: /* @__PURE__ */ React.createElement(BattlePass, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 83,
         columnNumber: 50
@@ -327,7 +326,7 @@ function App() {
         lineNumber: 83,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/marketplace", element: /* @__PURE__ */ jsxDEV(Marketplace, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/marketplace", element: /* @__PURE__ */ React.createElement(Marketplace, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 84,
         columnNumber: 51
@@ -336,7 +335,7 @@ function App() {
         lineNumber: 84,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/support", element: /* @__PURE__ */ jsxDEV(Support, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/support", element: /* @__PURE__ */ React.createElement(Support, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 85,
         columnNumber: 47
@@ -345,7 +344,7 @@ function App() {
         lineNumber: 85,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/profile", element: /* @__PURE__ */ jsxDEV(Profile, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/profile", element: /* @__PURE__ */ React.createElement(Profile, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 86,
         columnNumber: 47
@@ -354,7 +353,7 @@ function App() {
         lineNumber: 86,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ jsxDEV(Route, { path: "/store", element: /* @__PURE__ */ jsxDEV(Store, {}, void 0, false, {
+      /* @__PURE__ */ React.createElement(Route, { path: "/store", element: /* @__PURE__ */ React.createElement(Store, {}, void 0, false, {
         fileName: "<stdin>",
         lineNumber: 87,
         columnNumber: 45

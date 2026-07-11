@@ -1,9 +1,8 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { useMemo } from "react";
 import Player from "./Player.jsx";
 function PlayersGroup({ players = {}, visual }) {
   const ids = useMemo(() => Object.keys(players), [players]);
-  return /* @__PURE__ */ jsxDEV("group", { name: "Players_Group", children: ids.map((id) => /* @__PURE__ */ jsxDEV(Player, { id, data: players[id], visual }, id, false, {
+  return /* @__PURE__ */ React.createElement("group", { name: "Players_Group", children: ids.map((id) => /* @__PURE__ */ React.createElement(Player, { id, data: players[id], visual }, id, false, {
     fileName: "<stdin>",
     lineNumber: 26,
     columnNumber: 9

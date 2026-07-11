@@ -1,8 +1,7 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React from "react";
 function Button({ children, variant = "primary", onClick, disabled = false, className = "", ...rest }) {
   const vclass = variant === "ghost" ? "btn ghost" : variant === "icon" ? "btn icon" : "btn";
-  return /* @__PURE__ */ jsxDEV(
+  return /* @__PURE__ */ React.createElement(
     "button",
     {
       className: `${vclass} ${className}`,

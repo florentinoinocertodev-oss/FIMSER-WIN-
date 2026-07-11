@@ -1,4 +1,3 @@
-import { jsxDEV } from "react/jsx-dev-runtime";
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 function CameraFlashes({ visual = {} }) {
@@ -23,13 +22,13 @@ function CameraFlashes({ visual = {} }) {
     });
   });
   if (!enabled) return null;
-  return /* @__PURE__ */ jsxDEV("group", { name: "Camera_Flashes", children: positions.map((p, i) => /* @__PURE__ */ jsxDEV("mesh", { ref: (el) => refs.current[i] = el, position: p, rotation: [-Math.PI / 2, 0, 0], children: [
-    /* @__PURE__ */ jsxDEV("planeGeometry", { args: [4, 2] }, void 0, false, {
+  return /* @__PURE__ */ React.createElement("group", { name: "Camera_Flashes", children: positions.map((p, i) => /* @__PURE__ */ React.createElement("mesh", { ref: (el) => refs.current[i] = el, position: p, rotation: [-Math.PI / 2, 0, 0], children: [
+    /* @__PURE__ */ React.createElement("planeGeometry", { args: [4, 2] }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 39,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ jsxDEV("meshStandardMaterial", { color: "#ffffff", transparent: true, opacity: 0.06, emissive: "#ffffff", emissiveIntensity: 0.2 }, void 0, false, {
+    /* @__PURE__ */ React.createElement("meshStandardMaterial", { color: "#ffffff", transparent: true, opacity: 0.06, emissive: "#ffffff", emissiveIntensity: 0.2 }, void 0, false, {
       fileName: "<stdin>",
       lineNumber: 40,
       columnNumber: 11
