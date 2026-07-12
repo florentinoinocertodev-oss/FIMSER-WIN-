@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand tokens */
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-neon: var(--neon);
+  --color-green: var(--green);
+  --color-silver: var(--silver);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-bebas), var(--font-montserrat), sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+}
+
+:root {
+  color-scheme: dark;
+  --radius: 0.75rem;
+
+  /* FIMSER WIN — dark stadium theme */
+  --background: #07090a;
+  --foreground: #f4f7f0;
+
+  --card: #0f1311;
+  --card-foreground: #f4f7f0;
+
+  --popover: #0c0f0d;
+  --popover-foreground: #f4f7f0;
+
+  /* Neon green = primary action */
+  --primary: #a8ff00;
+  --primary-foreground: #0a0f00;
+
+  --secondary: #171d18;
+  --secondary-foreground: #eef2e8;
+
+  --muted: #141917;
+  --muted-foreground: #9aa79a;
+
+  /* Gold = premium / wealth */
+  --accent: #d4af37;
+  --accent-foreground: #100c00;
+
+  --destructive: #e5484d;
+  --destructive-foreground: #ffffff;
+
+  --border: color-mix(in oklch, #a8ff00 14%, transparent);
+  --input: #1a201b;
+  --ring: #a8ff00;
+
+  /* Brand palette */
+  --gold: #d4af37;
+  --gold-foreground: #100c00;
+  --neon: #a8ff00;
+  --green: #7ed321;
+  --silver: #c9ccd1;
+  --danger: #e5484d;
+  --success: #7ed321;
+
+  --chart-1: #a8ff00;
+  --chart-2: #7ed321;
+  --chart-3: #d4af37;
+  --chart-4: #c9ccd1;
+  --chart-5: #4d7a12;
+
+  --sidebar: #0b0e0c;
+  --sidebar-foreground: #f4f7f0;
+  --sidebar-primary: #a8ff00;
+  --sidebar-primary-foreground: #0a0f00;
+  --sidebar-accent: #171d18;
+  --sidebar-accent-foreground: #f4f7f0;
+  --sidebar-border: color-mix(in oklch, #a8ff00 12%, transparent);
+  --sidebar-ring: #a8ff00;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer utilities {
+  /* Neon glow helpers used across the app */
+  .glow-neon {
+    box-shadow: 0 0 20px -4px color-mix(in oklch, var(--neon) 60%, transparent);
+  }
+  .glow-gold {
+    box-shadow: 0 0 20px -4px color-mix(in oklch, var(--gold) 55%, transparent);
+  }
+  .text-glow-neon {
+    text-shadow: 0 0 14px color-mix(in oklch, var(--neon) 65%, transparent);
+  }
+  .text-glow-gold {
+    text-shadow: 0 0 14px color-mix(in oklch, var(--gold) 60%, transparent);
+  }
+  .bg-stadium {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -10%, color-mix(in oklch, var(--neon) 12%, transparent), transparent 70%),
+      radial-gradient(ellipse 60% 50% at 50% 110%, color-mix(in oklch, var(--green) 8%, transparent), transparent 70%),
+      var(--background);
+  }
+  .clip-slant {
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+  }
+}
